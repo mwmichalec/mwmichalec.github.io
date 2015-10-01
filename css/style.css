@@ -1,0 +1,483 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles */
+.fullheight {
+    height:100%
+}
+
+html {
+    height:100%
+}
+
+body {
+    background-color:#f5f5f5;
+    height:100%
+}
+
+@font-face {
+    font-family:goodtimes;
+    src:url(../fonts/goodtimes.ttf)
+}
+
+@font-face {
+    font-family:libelsuit;
+    src:url(../fonts/libelsuit.ttf)
+}
+
+#wrapper {
+    padding-left:0;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease
+}
+
+#wrapper.toggled {
+    padding-left:250px
+}
+
+#sidebar-wrapper {
+    z-index:1000;
+    position:fixed;
+    left:250px;
+    width:0;
+    height:100%;
+    margin-left:-250px;
+    overflow-y:auto;
+    background:#000;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width:250px
+}
+
+#page-content-wrapper {
+    width:100%;
+    height:100%;
+    position:absolute
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position:absolute;
+    margin-right:-250px
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    position:absolute;
+    top:0;
+    width:250px;
+    margin:0;
+    padding:0;
+    list-style:none
+}
+
+.sidebar-nav li {
+    text-indent:20px;
+    line-height:40px
+}
+
+.sidebar-nav li a {
+    display:block;
+    text-decoration:none;
+    color:#999
+}
+
+.sidebar-nav li a:hover {
+    text-decoration:none;
+    color:#fff;
+    background:rgba(255,255,255,0.2)
+}
+
+.sidebar-nav li a:active,.sidebar-nav li a:focus {
+    text-decoration:none
+}
+
+.sidebar-nav > .sidebar-brand {
+    height:65px;
+    font-size:18px;
+    line-height:60px
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color:#999
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color:#fff;
+    background:none
+}
+
+/* whateva that is */
+#page-content-wrapper {
+    position:relative
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position:relative;
+    margin-right:0
+}
+
+/* whateva that was it ends here */
+.bgcolor {
+    background-color:#f5f5f5;
+    color:#fff
+}
+
+/* Navigation top button */
+.white-navigation {
+    color:#fff
+}
+
+.white-navigation:visited {
+    color:#fff
+}
+
+.white-navigation:hover {
+    color:#fff
+}
+
+.white-navigation:active {
+    color:#fff
+}
+
+.white-navigation:focus {
+    color:#fff
+}
+
+/* navgation black here */
+.black-navigation {
+    color:#434343
+}
+
+.black-navigation:visited {
+    color:#434343
+}
+
+.black-navigation:hover {
+    color:#434343
+}
+
+.black-navigation:active {
+    color:#434343
+}
+
+.black-navigation:focus {
+    color:#434343
+}
+
+#linksright {
+    text-align:right;
+    font-weight:700;
+    padding-top:7px;
+    font-size:15px;
+    min-width:100px
+}
+
+#bamsetext {
+    font-family:"goodtimes";
+    background-repeat:;
+    background-color:#f5f5f5;
+    color:#434343;
+    text-align:center;
+    border-top-width:2px;
+    border-top-style:solid;
+    border-top-color:#bc191d;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:300px;
+    min-height: 300px;
+    max-height: 500px;
+    
+}
+
+#bamsetextsubpage {
+    font-family:"goodtimes";
+    background-color:#f5f5f5;
+    color:#434343;
+    text-align:center;
+    border-top-width:2px;
+    border-top-style:solid;
+    border-top-color:#bc191d;
+    padding-top:50px;
+    padding-bottom:30px;
+    min-width:300px;
+    min-height: 200px;
+    max-height: 250px;
+    
+}
+
+#beardlogo {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bamsemiddle {
+    font-size:40px
+}
+
+#mainmenuwrapper {
+    font-family:"libelsuit";
+    letter-spacing:1px;
+    padding:10px;
+    font-size:20px
+}
+
+#maincolumn1 {
+    text-align:center;
+    background-color:#c8c8c8;
+    border-radius:20px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:200px;
+    margin:10px
+}
+
+#maincolumn2 {
+    text-align:center;
+    background-color:#16a6b6;
+    border-radius:20px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:200px;
+    margin:10px
+}
+
+#maincolumn3 {
+    text-align:center;
+    background-color:#ee6557;
+    border-radius:20px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:200px;
+    margin:10px
+}
+
+#maincolumn4 {
+    text-align:center;
+    background-color:#434343;
+    border-radius:20px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:200px;
+    margin:10px
+}
+
+#maincolumn1:hover {
+    background-color:#8f8f8f;
+    opacity:.9;
+    transition:background .5s ease
+}
+
+#maincolumn2:hover {
+    background-color:#117681;
+    opacity:.9;
+    transition:background .5s ease
+}
+
+#maincolumn3:hover {
+    background-color:#e34535;
+    opacity:.9;
+    transition:background .5s ease
+}
+
+#maincolumn4:hover {
+    background-color:#151515;
+    opacity:.9;
+    transition:background .5s ease
+}
+
+.logoimages {
+    margin:auto
+}
+
+#navigationpos {
+    z-index:999;
+    font-family:"libelsuit";
+    letter-spacing:1px;
+    font-size:20p;
+    position:fixed;
+    top:0;
+    width:100%;
+    color:#434343;
+    background-color:#eaeaea;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#cfcfcf
+}
+
+#underbase {
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:30px;
+    width:100%;
+}
+
+#aboutright {
+    min-height:40px;
+    border-radius:5px;
+    margin-left:10px;
+    margin-right:10px
+}
+
+#aboutleft {
+    margin-left:10px;
+    margin-right:10px;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    color:#fff;
+    text-align:center;
+    background-color:#434343
+}
+
+.fading {
+    opacity:.3;
+    border:1px;
+    height:1px;
+    background-image:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0))
+}
+
+.hrmargin {
+    margin-left:15px;
+    margin-right:15px
+}
+
+#webdesign-gallery {
+    margin-top:30px;
+    margin-bottom:30px;
+    min-width:200px;
+    margin-left: 20px;
+
+}
+
+#webdesign-gallery {
+    margin-top:30px;
+    margin-bottom:30px;
+    min-width:200px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.websitedesc {
+    background-color:#fff;
+    color:#434343;
+    text-align:center
+}
+
+
+.webdesgallery {
+    margin-bottom:10px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#fff;
+    border-radius:10px
+}
+
+.wdrow {
+    margin-top:10px
+}
+
+.textheaderlibel {
+    font-family:libelsuit;
+    font-weight:700;
+    letter-spacing:2px
+}
+
+.textlibel {
+    font-family:libelsuit;
+    font-size:20px
+}
+
+/* This is an original footer 
+
+.footer {
+    margin-top: 80px;
+    width: 100%;
+    color: #434343;
+background-color: #eaeaea;
+    margin-bottom:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    min-width: 250px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #cfcfcf;
+    
+}
+
+ This is where it ends */
+.footer {
+    text-align:center;
+    margin-top:80px;
+    width:100%;
+    color:#434343;
+    margin-bottom:0;
+    padding-top:5px;
+    padding-bottom:5px;
+    min-width:250px;
+    font-size:15px;
+    font-family:"libelsuit"
+}
+
+/* Main carousel style */
+.carousel {
+    width: 600px;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+a.navigationlinks {
+    color: black;
+}
